@@ -1,19 +1,118 @@
-<!-- #######  THIS IS A COMMENT - Visible only in the source editor #########-->
-<p>&nbsp;</p>
-<h2>Group 5 - Form</h2>
-<div><form><label for="tname">Task name:</label><br /> <input id="tname" name="tname" type="text" value="" /><br /><br /> <label for="Desc">Description:</label><br /> <input id="Desc" name="Desc" type="text" value="" /><br /><br /> <label for="Ato">Assigned to:</label><br /><select id="Ato" name="Ato">
-<option value="comp">Completed</option>
-<option value="prog">In Progress</option>
-<option value="paus">Paused</option>
-<option value="notstarted">Not Started</option>
-</select><br />
-  <label for="ddate">Due Date</label>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label for="stat">Status</label><br >
-  <input id="ddate" max="2035-12-31" min="2021-01-01" name="trip-start" type="date" value="" /><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>  
-  <input id="stat" name="stat" type="text" value="" ><br><br><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
-  <input type="submit" value="Submit"><br>
-  
-  
-  <label for="tsk">Task </label><br /> <input id="tsk" name="tsk" type="text" value="" />
-  </form></div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--bootstrap css link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!--css link-->
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <title>Task 1-3</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="my-5">Task for the Day</h1>
+    <div class="row mb-5">
+      <div class="col">
+        <form id="newTaskForm">
+          <div class="form-group">
+            <label for="taskName">Name</label>
+            <textarea type="text" class="form-control" id="taskName" rows="1">Enter text here</textarea>
+          </div>
+          <div class="form-group">
+            <label for="taskDescription">Description</label>
+            <textarea type="text" class="form-control" id="taskDescription" rows="5">Enter text here</textarea>
+          </div>
+
+          <div class="form-row">
+            <form id="assignee">
+              <div>
+                <label for="assignee">Assigned To</label>
+                <select class="form-select" style="height: 2rem; width: 20rem;">
+
+                  <option value="axellemoreau">Axelle Moreau</option>
+                  <option value="jeyanthiranjit">Jeyanthi Ranjit</option>
+                  <option value="hopemolina">Hope Molina</option>
+                  <option value="sadianavid">Sadia Navid</option>
+                </select>
+              </div>
+
+              <div id="status">
+                <label for="status">Status</label>
+                <select class="form-select" style="height: 2rem; width: 18rem;">
+                  <option value="pending">Pending</option>
+                  <option value="inprogress">In Progress</option>
+                  <option value="inreview">In Review</option>
+                  <option value="completed">Completed</option>
+                </select>
+              </div>
+
+              <div class="col" id="duedate" style="height: 2rem; width: 10rem;">
+                <label for="duedate">Due Date</label>
+                <input type="date">
+              </div>
+
+            </form>
+          </div>
+
+          <button type="submit" class="btn btn-secondary float-sm-right">Submit</button>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h2>Task Cards</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Task 1</h5>
+            <p class="card-text">Create Task Wireframe</p>
+            <p class="card-text">Axelle Moreau</p>
+            <p class="card-text">Due Date: 06/29/21</p>
+            <span class="badge badge-secondary">Completed</span>
+            <a href="#" class="btn btn-secondary">Update</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Task 2</h5>
+            <p class="card-text">Implement the Wireframe using Bootstrap/Upload on GitHub</p>
+            <p class="card-text">Jeyanthi/Hope</p>
+            <p class="card-text">Due Date: 06/30/21</p>
+            <span class="badge badge-secondary">Completed</span>
+            <a href="#" class="btn btn-secondary">Update</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Task 3</h5>
+            <p class="card-text">Implement Card Layout containing task info</p>
+            <p class="card-text">Jeyanthi/Hope</p>
+            <p class="card-text">Due Date: 06/30/21</p>
+            <span class="badge badge-secondary">Completed</span>
+            <a href="#" class="btn btn-secondary">Update</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
