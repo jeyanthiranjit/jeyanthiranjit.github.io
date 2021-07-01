@@ -17,6 +17,116 @@
 
 <body>
   <div class="container">
+        
+    <div class="row mb-5">
+        <div class="col">
+            <h2>Task Form</h2>
+            <form id="taskform">
+                <div class="form-group">
+                    <label for="taskname">Name</label>
+                    <input type="text" class="form-control" id="taskname">
+                </div>
+                <div class="form-group">
+                    <label for="taskdescription">Description</label>
+                    <textarea type="text" class="form-control" id="taskdescription"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="assignee">Assigned To</label>
+                        <input type="text" class="form-control" id="assignee">
+                    </div>
+                    <div class="form-group col">
+                        <label for="status">Status</label>
+                        <input type="text" class="form-control" id="status">
+                    </div>
+                    <div class="form-group col">
+                        <label for="dueDate">Due Date</label>
+                        <input type="date" class="form-control" id="dueDate">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-secondary float-sm-right">Add Task</button>
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+<div class="row">
+  <div class="col">
+    <h2 class="text-center">Task Cards</h2>
+  </div>
+</div>
+
+<div class="col-6 mx-auto">
+  <div class="card-deck">
+    <div class="card bg-light">
+      <div class="card-body">
+      <h4>Task 1</h4>
+        <p class="card-text">Create Task Wireframe</p>
+        <p class="card-text">Axelle Moreau</p>
+        <p class="card-text">06/29/21</p>
+        <span class="badge badge-success">Completed</span>
+        <a href="#" class="btn btn-secondary">Update</a>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body">
+      <h4>Task 2</h4>
+        <p class="card-text">Implemented Wireframe with HTML and Bootstrap</p>
+        <p class="card-text">Jeyanthi/Hope</p>
+        <p class="card-text">06/30/21</p>
+        <span class="badge bg-warning">In Review</span>
+        <a href="#" class="btn btn-secondary">Update</a>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body">
+      <h4>Task 3</h4>
+        <p class="card-text">Implemented Card Layout containing task info</p>
+        <p class="card-text">Jeyanthi/Hope</p>
+        <p class="card-text">06/30/21</p>
+        <span class="badge bg-warning">In Review</span>
+        <a href="#" class="btn btn-secondary">Update</a>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--<div class="container">
     <h1 class="my-5">Task for the Day</h1>
     <div class="row mb-5">
       <div class="col">
@@ -31,51 +141,60 @@
           </div>
 
           <div class="form-row">
-            <form id="assignee">
-              <div>
-                <label for="assignee">Assigned To</label>
-                <select class="form-select" style="height: 2rem; width: 20rem;">
+                <div class="col-6">
+                  <div id="assignee">
+                    <label for="assignee">Assigned To</label>
+                    <select class="form-select" style="height: 2rem; width: 20rem;">
+                      <option value="axellemoreau">Axelle Moreau</option>
+                      <option value="jeyanthiranjit">Jeyanthi Ranjit</option>
+                      <option value="hopemolina">Hope Molina</option>
+                      <option value="sadianavid">Sadia Navid</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="col-4"></div>
+                  <div id="status">
+                    <label for="status">Status</label>
+                    <select class="form-select" style="height: 2rem; width: 18rem;">
+                      <option value="pending">Pending</option>
+                      <option value="inprogress">In Progress</option>
+                      <option value="inreview">In Review</option>
+                      <option value="completed">Completed</option>
+                    </select>
+                  </div>
+                </div>
 
-                  <option value="axellemoreau">Axelle Moreau</option>
-                  <option value="jeyanthiranjit">Jeyanthi Ranjit</option>
-                  <option value="hopemolina">Hope Molina</option>
-                  <option value="sadianavid">Sadia Navid</option>
-                </select>
-              </div>
-
-              <div id="status">
-                <label for="status">Status</label>
-                <select class="form-select" style="height: 2rem; width: 18rem;">
-                  <option value="pending">Pending</option>
-                  <option value="inprogress">In Progress</option>
-                  <option value="inreview">In Review</option>
-                  <option value="completed">Completed</option>
-                </select>
-              </div>
-
-              <div class="col" id="duedate" style="height: 2rem; width: 10rem;">
-                <label for="duedate">Due Date</label>
-                <input type="date">
-              </div>
-
-            </form>
+                <div class="col-2">
+                  <div class="col" id="duedate" style="height: 2rem; width: 10rem;">
+                    <label for="duedate">Due Date</label>
+                    <input type="date">
+                  </div>
+                </div>
           </div>
 
-          <button type="submit" class="btn btn-secondary float-sm-right">Submit</button>
+          <button type="submit" class="btn btn-secondary float-sm-right">Add Task</button>
 
         </form>
       </div>
-    </div>
+    </div>-->
 
-    <div class="row">
-      <div class="col">
-        <h2>Task Cards</h2>
-      </div>
-    </div>
+    
+  
 
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
+
+
+
+
+
+
+
+
+
+
+    <!--<div class="row">
+      <div class="col-m-4"></div>
+        <div class="card" style="width: 15rem;">
           <div class="card-body">
             <h5 class="card-title">Task 1</h5>
             <p class="card-text">Create Task Wireframe</p>
@@ -86,8 +205,8 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
+      <div class="col-m-4">
+        <div class="card" style="width: 15rem;">
           <div class="card-body">
             <h5 class="card-title">Task 2</h5>
             <p class="card-text">Implement the Wireframe using Bootstrap/Upload on GitHub</p>
@@ -98,8 +217,8 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
+      <div class="col-m-4">
+        <div class="card" style="width: 15rem;">
           <div class="card-body">
             <h5 class="card-title">Task 3</h5>
             <p class="card-text">Implement Card Layout containing task info</p>

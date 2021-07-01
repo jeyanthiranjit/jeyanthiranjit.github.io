@@ -1,20 +1,9 @@
 body {
     background-color: #aedd94;
     font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-}
-
-#assignee {
-    width: 100px;
-    height: 30px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .form-group {
     max-height: 100%;
-}
-
-
-.card {
-    min-height: 10rem;
 }
