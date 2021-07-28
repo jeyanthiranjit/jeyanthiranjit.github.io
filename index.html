@@ -22,31 +22,31 @@
     <div class="row mb-5">
         <div class="col">
             <h2>Task Form</h2>
-            <form id="taskform">
+            <form id="taskForm">
                 <div class="form-group">
-                    <label for="taskname">Name</label>
-                    <input type="text" class="form-control" id="taskname">
+                    <label for="newTaskName">Name</label>
+                    <input type="text" class="form-control" id="newTaskName" onkeypress="uponEnter()">
                 </div>
                 <div class="form-group">
-                    <label for="taskdescription">Description</label>
-                    <textarea type="text" class="form-control" id="taskdescription"></textarea>
+                    <label for="newTaskDescription">Description</label>
+                    <textarea type="text" class="form-control" id="newTaskDescription" onkeypress="uponEnter()"></textarea>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col">
                         <label for="assignee">Assigned To</label>
-                        <input type="text" class="form-control" id="assignee">
+                        <input type="text" class="form-control" id="assignee" onkeypress="uponEnter()">
                     </div>
                     <div class="form-group col">
                         <label for="status">Status</label>
-                        <input type="text" class="form-control" id="status">
+                        <input type="text" class="form-control" id="status" onkeypress="uponEnter()">
                     </div>
                     <div class="form-group col">
                         <label for="dueDate">Due Date</label>
-                        <input type="date" class="form-control" id="dueDate">
+                        <input type="date" class="form-control" id="dueDate" onkeypress="uponEnter()">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-secondary float-sm-right">Add Task</button>
+                <button type="submit" class="btn btn-secondary float-sm-right" onkeypress="uponEnter()">Add Task</button>
             </form>
         </div>
     </div>
@@ -112,4 +112,7 @@
       </div>
     </div>
   </div>
+  
+  </body>
+  </html>
   
